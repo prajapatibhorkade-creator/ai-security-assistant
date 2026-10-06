@@ -1,0 +1,6 @@
+Alembic migration environment for AI Security Assistant.
+
+From the project root:
+
+    alembic revision --autogenerate -m "describe change"
+    alembic upgrade head

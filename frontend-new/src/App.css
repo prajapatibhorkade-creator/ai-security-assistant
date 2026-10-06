@@ -1,0 +1,420 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+/* LOGIN */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef3f8;
+}
+
+.login-card {
+  width: 400px;
+  padding: 40px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.login-card h1 {
+  text-align: center;
+  margin: 10px 0 12px;
+  color: #172033;
+  font-size: 28px;
+  line-height: 1.3;
+  white-space: normal;
+  word-break: normal;
+}
+
+.subtitle {
+  text-align: center;
+  color: #667085;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 7px;
+  font-weight: bold;
+  color: #344054;
+}
+
+input {
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+button {
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.footer-text {
+  text-align: center;
+  margin-top: 25px;
+  color: #98a2b3;
+  font-size: 13px;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.dashboard-header {
+  background: #172033;
+  color: white;
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+.dashboard-header p {
+  margin: 6px 0 0;
+  color: #cbd5e1;
+}
+
+.logout-button {
+  background: #dc2626;
+  width: 100px;
+}
+
+.logout-button:hover {
+  background: #b91c1c;
+}
+
+.dashboard-content {
+  padding: 40px;
+}
+
+.dashboard-content h2 {
+  color: #172033;
+  margin-bottom: 25px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.dashboard-card h3 {
+  color: #172033;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.dashboard-card p {
+  color: #667085;
+  margin-bottom: 20px;
+}
+
+.analytics-panel {
+  margin-top: 26px;
+  padding: 22px 0;
+  border-top: 1px solid #d0d5dd;
+  border-bottom: 1px solid #d0d5dd;
+}
+
+.analytics-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.analytics-header h2 {
+  margin: 0;
+  color: #172033;
+}
+
+.analytics-header p {
+  margin: 6px 0 0;
+  color: #667085;
+}
+
+.analytics-refresh-button {
+  width: auto;
+  min-width: 150px;
+  font-size: 14px;
+}
+
+.analytics-summary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.analytics-card {
+  padding: 16px;
+  border: 1px solid #e4e7ec;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.analytics-card h3 {
+  margin: 0 0 8px;
+  color: #667085;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.analytics-card p {
+  margin: 0;
+  color: #172033;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.analytics-breakdowns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.analytics-breakdown h3 {
+  margin: 0 0 10px;
+  color: #172033;
+  font-size: 15px;
+}
+
+.analytics-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid #eaecf0;
+  color: #475467;
+  font-size: 13px;
+}
+
+.analytics-row strong {
+  overflow-wrap: anywhere;
+  font-weight: 500;
+}
+
+.analytics-row span {
+  color: #172033;
+  font-variant-numeric: tabular-nums;
+}
+
+.analytics-empty,
+.analytics-error {
+  color: #667085;
+}
+
+.analytics-error {
+  color: #b42318;
+}
+
+.risk-breakdown {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top: 1px solid #e4e7ec;
+}
+
+.risk-breakdown h4 {
+  margin: 0 0 12px;
+  color: #172033;
+  font-size: 14px;
+}
+
+.risk-breakdown-row {
+  display: grid;
+  grid-template-columns: minmax(110px, 1fr) minmax(70px, 1.2fr) 24px;
+  align-items: center;
+  gap: 10px;
+  margin: 9px 0;
+  color: #475467;
+  font-size: 12px;
+}
+
+.risk-breakdown-row b {
+  color: #172033;
+  text-align: right;
+}
+
+.risk-bar-track {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #eaecf0;
+}
+
+.risk-bar-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: #d97706;
+  transition: width 300ms ease;
+}
+
+.copilot-run-button {
+  width: auto;
+  min-width: 150px;
+  font-size: 14px;
+}
+
+.security-copilot-result {
+  margin-top: 18px;
+  padding: 20px;
+  border: 1px solid #d0d5dd;
+  border-left: 4px solid #d97706;
+  border-radius: 6px;
+  background: #fff;
+  color: #344054;
+}
+
+.security-copilot-result-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.security-copilot-result h3,
+.security-copilot-result h4 {
+  margin: 0 0 8px;
+  color: #172033;
+}
+
+.security-copilot-result-header p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.security-copilot-level {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border-radius: 4px;
+  background: #fff4e5;
+  color: #9a4d00;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.security-copilot-score {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 16px 0;
+  color: #172033;
+}
+
+.security-copilot-score span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.security-copilot-list {
+  margin-top: 16px;
+}
+
+.security-copilot-list ul {
+  margin: 0;
+  padding-left: 20px;
+  line-height: 1.65;
+}
+
+.security-copilot-error {
+  margin-top: 14px;
+  color: #b42318;
+}
+
+.dashboard-card button {
+  width: 140px;
+  font-size: 14px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .dashboard-header {
+    padding: 20px;
+  }
+
+  .dashboard-content {
+    padding: 20px;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .analytics-summary,
+  .analytics-breakdowns {
+    grid-template-columns: 1fr;
+  }
+
+  .risk-breakdown-row {
+    grid-template-columns: minmax(105px, 1fr) minmax(65px, 1.2fr) 24px;
+    gap: 8px;
+  }
+
+  .security-copilot-result-header {
+    flex-direction: column;
+  }
+
+  .login-card {
+    width: 90%;
+  }
+}

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+venv313/
+
+# Environment / secrets
+.env
+.env.*
+
+# Node
+node_modules/
+
+# Frontend build
+dist/
+
+# Database and generated artifacts
+*.db
+*.sqlite
+*.sqlite3
+security_model.joblib
+incidents.json
+response_audit.jsonl
+
+# Empty/generated ML artifact
+model.pkl
+
+# IDE
+.vscode/
+.idea/

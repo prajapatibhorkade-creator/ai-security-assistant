@@ -1,0 +1,9 @@
+.env
+*.db
+*.sqlite
+*.sqlite3
+incidents.json
+response_audit.jsonl
+__pycache__/
+*.py[cod]
+app/ml/security_model.joblib

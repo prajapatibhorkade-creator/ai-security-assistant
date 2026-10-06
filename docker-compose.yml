@@ -1,0 +1,20 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ai-security-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./backend/.env
+    environment:
+      DATABASE_URL: sqlite:////app/data/security.db
+      INCIDENT_FILE: /app/data/incidents.json
+      SECURITY_MODEL_PATH: /app/data/security_model.joblib
+    volumes:
+      - security-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  security-data:
